@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/White">
+
+    <EditText
+        android:id="@+id/etInputText"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Masukan teks disini "
+        android:textColor="@color/White"
+        android:background="@color/Grey"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btGenerate"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:text="@string/generate_kode"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/etInputText"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/ivBarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btGenerate" />
+
+</RelativeLayout>
